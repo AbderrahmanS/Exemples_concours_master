@@ -1,0 +1,124 @@
+11:34 05/01/2017******Programmation oriente objet******** :
+
+ ---> Invoquer un constructeur de class Mere avec parametres : ExtendedPoint::Extended(....):Point(x,y){.....}
+ ---> Utilisation une methode Deja dans Classe mere : void Extended::print(){.....Point::print();....}
+ ---> Affectation entre objet de meme type(meme classe): static : Normal--> Point p2=p1; p2.print(); // Dynamique : Génere un constructeur de copie : Point(Point &p);
+ ---> Affectation : Fille-->Mére : STATIC    :ExtendedPoint p1(10,20,30); Point p2=p1; // les donnes de fille sont perdus.
+                    Fille-->Mére : DYNAMIQUE :..*();..*p2=p1//Donns conserve
+
+          ***Declaration de la méthode comme : virtual void print(); // Daans classe  Mére//****
+
+ ---> Affectation : Mére-->Fille : STATIC    :Casting(ca maarche pas)/+Surcharge de l'operateur=(Possible !!) + constructeur de copie // Dans classe fille !!
+                    Mére-->Fille : DYNAMIQUE :n'est possible si on utilise le casting.
+                    
+******JAVA (Affectation)*****:
+
+ EN java les affectations entre classe mere et fille :
+   --> Fille -->Mére : Fille f=new Fille(..); Mére m=f;
+   --> Mére -->Fille : //Transtypage(casting),Objet Mére pointe effectivement un objet Fille// Fille f1=new Fille(..); Mére m=f1//objet mére pointe fille; Fille f2=(Fille)m;
+
+
+
+****TYPES PRIMITIVES**** :
+    entiers : byte 10 , short 2 ,int 4, long 8
+    reel: float 4 ,double 8
+    char: 2
+ 4 niveau de visibility :: public , default public // dehohrs package ni plus accesible// , private , protected // accebile par class fille meme s'elle dehors de package
+ A la place d'etoile on aura une clasee String dans JAva!!
+ Préférable d'utiliser double par float !!
+ Des solutions : 
+    private float pu =20.5f   //  ....pu=(float)20.5   //  Ou utilisons des doubles !!
+ --> LE role de compilateur s'est d'agir la classe crée par default , il intervient pour cree un lien par classe Object , definie dan package Lang !!
+ --> Possibilite de concatener n'importe qoui avec une chaine  exp : String s = "Produit : " +p1 ;
+ --> ToSTring(): il retourne une forte de chaine , il retourne le visage de l'objet , intervenir par defaut par la classe mére Object !!
+ --> Si ceci nous nous plait pas on doit redéfinir ToString()
+ --> La classe Object nous intervenir des methodes et des definitions par defaut mais on peut redefinir des autres !!
+ --> @Override :// anotation implemente dans JDK5// il nous dit que nous entrain de redefinir correctement !!
+ --> Mettre une propriete associer a beaucouup de methodes on doit le declarer comme Globale , Propriete de Classee :D !!
+ --> private static '...': sotcker dans la classe mére !! ----> il peut etre accessible sur La classe ---> donne static son acceseur ca va mieux d'etre static !!
+ --> Classe n'est pas instanciable : Constructeur de la classe privée(Private) !!
+ --> public final double MAX-VALUE = 20 ; //constante intouchable !!//
+ --> Methode static ne peut pas acceder a des autres non static "pas de this"!!
+ --> Constructuer jamais ma3mero yqed ykon static !!
+ --> Une solution pour ne peut avoir tt static : utilisons "new" !
+
+
+ *****L' HERITAGE****** : 
+ --> Pour manipuler l'heritage : " public static Extendedpoint extends Point"
+ --> Invoquer au moins un constructeur de la classe mére par défaut c'est : super() // appel expilicite !! // Le premier comme instruction dans le constructeur//
+ --> La légature est tjrs realisé dynamiquement pas de virtuel dans java !!
+ --> Affectation  fille-->MEre : "Point p1 = new ExtendedPoint(20,30,Color.red);"
+                                "ExtendedPoint f = new....(10,20,new Color(10,0,1508));
+                                "Point m = f;"    " m.print();"
+ --> Possibilite de connaitre tous dynamiquement , tous les infos sur nos objets et nos classes, c'est l'introspection : "getClass.getNAme" getClass........" !!
+ --> Affectation mére-->fille : " PAs d'affectation : f1 = m1 "; Java nous offre un controleur de type static : il verifie que le type est coherant , controleur de type dynamiq : lors d'execution il verifie s'elle est correcte!!
+               Solut : On peut l'avoir par 2  condition : semantique(l'objet caste doit etre  caste paar l'objet qui se pass) et syntaxique(casting) !!
+ --> TOus est un objet dans java sauf les types primitives !!
+ --> Donne primitive (les 8 :) : On l'associe par des classes Wrappers : Ex : Integer p = new Integer(20); //L'autoboxing // 
+ --> Vector v = new vector();  v.add("une chaine"); //equivalence// v.add(new String("une autre chaine"));
+ --> Ex : int i = new Integer(50); //L'inboxing//
+
+
+******Les Tableaux en java******** :
+
+ --> System.out.println(v) ; for(i)0;i<v.size();i++){system.out.println("-" + v.get(i));}
+ --> La classe Vector add dialieha lent 3la la Classe linkedList , Par contre la boucle d Vector pluuuuus rapide 3la dial LinkedList !!!
+ --> Genericité : Vector<Point> v new vector<>(); // foreach--> for(Point p : v) {p.print();}
+ --> Definition d'unn tableau : Que ls tableaux dynamiique : type t[]; Instanciation d'un tableau : int t[] = new int[5] // les tableaus cas particulier des objets ;
+ --> remplir un tableau aleatoirement : t[i] = (int)(Math.random() *900) +100; //entre 100 et 1000;
+ --> ajouteer un elemet à un tableau : on utilise vector qui le gere implicitement 
+ -->Insatancier et met des valeurs dedans : t = new int[]{12,14,15}
+ --> m.length nbre de ligne num 1 , m[i].length:nbre de ligne numer 2 
+ --> t = new LinkedList[3]; ---> une boucle apres on met t[i]=new LinkedList<>(); --> t[0].add(new Pointt);
+ --> Stringt[]=new String
+ 
+*****Interfaces****** : 
+
+--> Methode non definie :Partielement abstraite(abstract): des mothodes absraites et des methodes contraites //
+                        :Classe Entieremnt(totalement) abstraite , ne peut po contenir des donnes(sont automatiqmt des constantes) : "Interface": public interface
+--> LayoutManager est une interface : // On utilise les interfaces : 1: Pour deliguer des taches , 
+                                                2: Lorqsue le comportemnt est abstrait , 3: ne n'avons po des structures de donnes connus.
+--> Jpanel content  (JPanel)etContentPane(); // BorderLayout
+--> Une classe implemente une inteface(classe inetrface),Par contre une interface peut etendre une interface(interface interface).
+--> Fournir une implementation : ActionListner
+--> Rendre les bouttons reactifs : ** a chaque button un écouteur(Listner) different :** Jbutton src = (Jbutton)e.getSource(); system.out.println(src.getText()); **
+                                  ** ensemble de button associe le meme ecouteur : **system.out.println("actionPerformed()"); **
+--> public Class Test extends JFrame implements ActionListener,MousseListener,.... : chaque class peut implementer une interface !
+--> Associe un seul Listener pour rendre les buttons dans une classe operationel : public void ActionListener(AcLisnr Listener) : for (... getcompenetcount) / Jbutton b = ()getcompenet(i);/add.ActionListener(Listeenr);  //public void actionPerformed(ActionEvent e)
+--> public void addActionlistner(String label,Acionlistn Listenr) { Jbutoon b = buttons
+--> Hashtable indexe par ce qu'on veut : "private Hashtable<String,Jbutton> buttons Indexer les buttons par leur text !! //buttons.put(b.getText(),b);
+--> Evenement de clavier : ***KeyListener(Keyevent e) : Keypresed,keyReleased,KeyTyped***
+--> //Bloquer un caractere : setKeychar((char)0);
+--> Un adapteur pour MouseListener && KeyLister (sans utiliser une implementation) : KeyAdapter : public class ... extends Keyadapter
+--> MouseListener : ** (Plus utilise)mouseclicked "moussepressed && mouseEntered" ,mouseEntered,mouseExited,moussepresssed,mousseReleased **
+
+
+*******Les Interfaces : "composition et LayoutManager"******** !!
+    package com.smi.java.swing;
+    import java.awt.JPanle
+--> AWT abstract windowing 4 types de fenetres : 
+   JFRame(fentre ordinaire pou l'utilisateur avec decort) , JDialogue(extrait de JFrame : fenetre fille) , JWindow(fenetre plate vierge) , JApllet(fenetre non autonome,Meme fct de JFrame)
+--> Classe component Hérite DE CLasse Objet , et CLasse container hérite de classe compenent , et container peut contenir des compenents (agregation) !!
+--> Jcompenent La classe mere de tous les compenent dans "SWING" , 
+--> Exit_On_CLOSE, setsize , setlocation , setbounds : definit dans la claase..... 
+--> JPanel :un panneau , JLabel : une etiquette , JTextField : zone de texte , JButton : Boutton , les composants d'un panneau : p1.add() ; accrocher un panneau :setContentPane(p1);
+                                                                                                  North
+--> LayoutManager : setLAyoutManager(new Gridelayout(nbligne,nbcolon) /BorderLayout()) ----> wast center East
+                                                                                                  South
+--> Accelerer :  public class ButtonPanle extends JPanel { public ButtonPanel(int x ,Strinontenet.setBrorder(BorderFactory.createEtcheedBorer());g ...labels) // ... ;nbre de parametre //
+
+*****FORMULAIRE***** : 
+
+--> Alignement,espacement vertical,espacementt horizontal : setLayout(FlowLayout(Flowlayout.LEFT.20.0);
+--> Donner une taille préferée a notre Jframe(Bricolage): setResizable(false);
+--> BoxLayout : 2 parametres --> le premier precis le panneau qu'on va se pointer , le deuxieme precis si c'est horizontlmnet ou verticalment : public Form() { setLayout(new BoxLayout(this,BoxLAyout.Y_AXIS));}
+--> JLable l1 = new Jlabel(label);  l1.setPreferredSize(new DImension(arg0,arg1);)
+--> Recupere la zone de texte : getcompenent(..);
+--> Bordure : content.setBorder(BorderFactory.createEtchedBorder());
+--> Combinaison de bordure et un titre : this(); content.setBorder(BorderFactory.createTitleledBorder(BorderFactory.createlineBorder(Color.blue),title));
+--> Pour faire un menu : **3 classes a faire** : Jmenu contient des menu et des menus contient des Items // JMenuBAr=new JMenuBar(); // JMenu m1 = new JMenu("File"); // UNE théme : JMenuItem i1 = new JMenuItem("New"); // Lors d'execution on genere : setJMenuBar(m); 
+--> La strucutre de donne qui nous permettre de cree tous a la meme fois :  String labels[][]={ {"File","New",....},{"Edit","copy",...} }; // Menu m = new Menu(labels);
+--> Cree une icone : ImageIcon = new ImageIcon(iconFolder + t[i].toLowerCase() + suffix); 
+
+
+
