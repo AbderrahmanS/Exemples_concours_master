@@ -1,0 +1,193 @@
+Que veut dire UML?
+
+	Union mondiale de la lecture.
+	Unified modeling language.
+	Unité mesure libre
+
+
+UML est la fusion de:
+
+	BOOCH.
+	OOSE.
+	Microsoft .
+	OMT
+
+
+Un diagramme de classes appartient aux :
+
+	Diagrammes structurelles
+	Diagrammes comportementaux
+
+
+L'agrégration est-elle un type d'association? :
+
+	Oui
+	Non
+
+
+Que signifie la multiplicité 1..*? :
+
+	Plusieurs incluant la possibilité d’aucun
+	Exactement 1
+	Au plus un
+	Au moins un
+
+Une action qu’un objet peut réaliser s’appelle :
+
+	Une opération
+	Une classe
+	Un attribut
+	Une formule
+
+
+Un acteur est-il obligatoirement une personne physique?
+
+	Oui
+	Non
+
+
+Une activité dans un diagramme définit :
+
+	Des traitements
+	Le rôle d’une entreprise
+	Un comportement
+	Le chiffre d’affaires
+
+Un nœud de contrôle peut être :
+
+	un nœud de décision
+	un nœud d’objet
+	un nœud d’union
+	un nœud initial
+	un nœud de bifurcation
+
+
+Un cercle vide barré d'une croix représente:
+
+	Une bille
+	Un nœud de fin de flot
+	Un nœud initial
+	Un nœud de fin d’activité
+
+
+Le nœud d’activité appelé « Loop » signifie :
+
+	Nœud de séquence
+	Nœud conditionnel
+	Nœud de boucle
+	Nœud d’union
+
+
+Qu’est-ce qu’un cas d’utilisation interne ?
+
+	C’est un cas d’utilisation qui indique les fonctionnalités principales.
+	C’est un cas d’utilisation qui est utile à un autre cas d’utilisation.
+	C’est un cas d’utilisation qui est lié à un acteur.
+	C’est un cas d’utilisation qui est lié à un acteur secondaire.
+
+Qu'est ce qu'une relation dite include?
+
+	Le cas d’utilisation A est réalisé avant le cas d’utilisation B.
+	Le cas d’utilisation A toujours besoin du cas d’utilisation B.
+	Le cas d’utilisation A peut éventuellement avoir besoin du cas d’utilisation B.
+	Le cas d’utilisation B peut éventuellement avoir besoin du cas d’utilisation A
+
+
+Qu'est ce qu'une relation dite extend?
+
+	Le cas d’utilisation A est réalisé avant le cas d’utilisation B.
+	Le cas d’utilisation A toujours besoin du cas d’utilisation B.
+	Le cas d’utilisation A peut éventuellement avoir besoin du cas d’utilisation B.
+	Le cas d’utilisation B peut éventuellement avoir besoin du cas d’utilisation A
+
+
+Que doit-on faire lors de l’analyse de besoins principaux d’un projet logiciel ?
+
+	Définir toutes les informations nécessaires du futur logiciel.
+	Découvrir les acteurs et les fonctionnalités du futur logiciel.
+	Décrire une fonctionnalité du futur logiciel.
+	Définir les packages ou les grandes parties du logiciel à créer.
+
+
+Qu’est-ce un acteur principal ?
+
+	C’est une fonctionnalité du logiciel.
+	C’est une action qui devra être réalisée grâce au logiciel à développer.
+	C’est une entité avec lequel le logiciel a une interaction, mais qui ne déclenche aucune action.
+	C’est un des futurs utilisateurs du logiciel
+
+Qu’est-ce qu’un package ?
+
+	Un package est une utilisation du logiciel par un des acteurs.
+	Un package est composé de plusieurs fonctionnalités qui forment une famille.
+	Un package est un regroupement d’acteurs.
+	Un package est un diagramme qui représente tous les utilisateurs.
+
+ Dans un diagramme de classes en langage UML, la généralisation :
+	Est une relation transitive : si C dérive d'une classe B qui dérive elle-même d'une classe A, alors C dérive également de A
+	Est une relation réflexive : une classe peut dériver d'elle-même
+	Est une relation symétrique : si une classe B dérive d'une classe A, alors la classe A peut dériver de la classe B
+	Représente une association non symétrique dans laquelle une des extrémités joue un rôle prédominant par rapport à l'autre extrémité
+
+ En Java, une association (dans un diagramme de classes UML) est-elle implémentée par ?
+	une variable d'instance
+	une opération
+	une variable de classe
+	un constructeur
+
+ Un rôle (dans un diagramme de classes UML) se traduit-il en Java par ?
+	un nom de variable
+	une association
+	un constructeur
+	une opération
+
+Quel type de relations sont permises entre des cas d'utilisation ?
+	Association
+	Généréralisation / héritage
+	Dépendance de type "includes"
+	Dépendance de type "extends"
+
+Queel est le modificateur d'accès le plus contraignant ?
+	private
+	public
+	protected
+
+Entre une classe Vehicule et une classe Roue, quel type de relation est adéquate ?
+	Composition
+	Association
+	Héritage
+	Agrégation
+
+ Entre une classe Vehicule et une classe Conducteur, quel type de relation est adéquate ?
+	Composition
+	Association
+	Héritage
+	Agrégation
+
+Entre une Classe Véhicule et une classe Bâteau, quel type de relation est adéquate ?
+	Composition
+	Association
+	Héritage
+	Agrégation
+
+ Considérons une association entre une classe Client et une classe Commande. Quelle multiplicité
+mettriez-vous du côté de Commande ?
+	0..1
+	0..*
+	1..*
+	1..1
+
+ Considérons une association entre une classe Client et une classe Commande. Quelle multiplicité
+mettriez-vous du côté du Client ?
+	0..1
+	0..*
+	1..*
+	1..1
+
+
+Grâce à une relation d'héritage, de quoi hérite la classe enfant ?
+	des opérations
+	des propriétés
+	des associations
+	des relations d'héritage
+	des attributs

@@ -1,0 +1,189 @@
+1- Quel est le noyau du système d’exploitation?
+A Script
+B Commandes
+C Kernel
+D Shell
+
+2- Sous UNIX, le clavier est le périphérique d’entrée par défaut et l’écran est le périphérique de sortie par défaut ?
+A Vrai
+B Faux
+
+3- Les applications communiquent avec le noyau en utilisant ….. ?
+A Le shell
+B Le script shell
+C Un programme C
+D Des appels système
+
+4- Parmi les éléments suivants, lequel interagit directement avec le matériel du système?
+A Le shell
+B Les commandes
+C Le Kernel
+D Les applications
+
+5-La syntaxe de toute commande Unix est ….. ?
+A command [options] [arguments]
+B command options [arguments]
+C command [options] [arguments]
+D command options arguments
+
+6-Unix est de quel type de système d’exploitation?
+A Multi-tâches
+B Multi-utilisateur
+C Multi processus
+
+7-Lequel des éléments suivants permet le multitâche sous UNIX?
+A Partage de temps
+B Multi programmation
+C Multi-utilisateurs
+D Modularité
+
+8-Solaris appartient à ______ ?
+A HP
+B IBM
+C Digital Equipment Corp
+D Sun Microsystems
+
+9-Comment obtenez-vous de l’aide sur la commande « cp »?
+A cd ?
+B man cp
+C help cp
+D aucune des réponses
+
+10-Lequel des éléments suivants est utilisé pour écrire de petits programmes pour contrôler les fonctionnalités de l’Unix?
+A Filteres
+B Script Shell
+C Langage C
+D Commande Shell
+
+11-Lequel des énoncés suivants est FAUX?
+A Unix prend en charge plusieurs utilisateurs
+B Linux est un système d’exploitation open source et le code source est partagé
+C Shell prend en charge la communication inter processus
+D Shell fournit la fonctionnalité de redirection d’E / S
+
+12-Lequel de ces system n’appartient pas à Unix?
+A AIX
+B IRIX
+C MAC
+D BSD
+
+13-La commande Find / -name ‘*’ ?
+A Lister tous les fichiers et répertoires récursivement à partir de la racine /
+B Lister un fichier nommé * qui se trouve dans la racine /
+C Lister tous les fichiers qui se trouve dans la racine /
+D Lister tous les fichiers et répertoires qui se trouve dans la racine /
+
+14-Quelle commande est utilisée pour imprimer un fichier ?
+A ptr
+B lpr
+C print
+D Aucune de ces réponses
+
+15-Quelle commande est utilisée pour afficher la version de votre system ?
+A uname -r
+B uname -t
+C kernel
+D uname -n
+
+16-Quelle commande est utilisée pour afficher le nom de votre système d’exploitation ?
+A unix
+B uname
+C os
+D kernel
+
+17-Quelle commande est utilisée pour identifier le type de fichier?
+A Type
+B File
+C Finfo
+D Info
+
+18-Quelle option de la commande « rm » est utilisée pour supprimer un répertoire avec tous ses sous-répertoires?
+A –o
+B –p
+C –r
+D –b
+
+19-Quelle commande crée un fichier vide si le fichier n’existe pas?
+A cat
+B touch
+C read
+D ed
+
+20-Quelle commande est utilisée pour copie des fichiers depuis et vers les archives?
+A gzip
+B zip
+C cpio
+D backup
+
+21-Quelle commande est utilisée pour extraire une colonne d’un fichier texte?
+A get
+B paste
+C cut
+D tar
+
+22-Quelle commande modifie le propriétaire du groupe d’un fichier?
+A chgrp
+B cgrp
+C change
+D group
+
+23-Quelle commande est utilisée pour afficher le contenu d’un fichier texte compressé?
+A zcat
+B print
+C type
+D cat
+
+24-Laquelle des commandes suivantes permettra à l’utilisateur de chercher dans un fichier pour une expression particulier?
+A ls
+B find
+C grep
+D touch
+
+25-Quelle option de la commande « tar » est utilisée pour lister le contenu d’un archive?
+A xvf
+B cvf
+C ovf
+D tvf
+
+26-Laquelle des commandes suivantes peut être utilisée pour modifier les droits par défaut pour les fichiers et les répertoires au moment de la création?
+A umask
+B chown
+C chmod
+D chgrp
+
+27-La commande « pwd » affiche _______ ?
+A Mot de passe de l’utilisateur
+B Le contenu du fichier de mot de passe
+C Le répertoire de travail courant
+D Aucun des réponse
+
+28-Quelle commande est utilisée pour afficher tous les fichiers, y compris les fichiers cachés dans votre répertoires et ses sous-répertoires?
+A ls –l
+B ls –R
+C ls –a
+D ls –aR
+
+29-Quelle commande pour afficher la date dans le format « jj/mm/aaaa »?
+A date + %d/%m/%Y
+B date + ”%d/%m/%Y”
+C date + /%d/%m/20%y
+D date + ”/%d/%m/20%y”
+
+30-Quelle commande pour afficher le fichier ‘test.txt’ ?
+A man test.txt > more
+B cat test.txt < more
+C cat test.txt | more
+D aucune de ces reponses
+
+bonus- Quelle commande affiche le nom du système d’exploitation?
+A uname -n
+B uname -r
+C uname -o
+D uname –m
+
+
+
+
+
+
+

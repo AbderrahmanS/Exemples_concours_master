@@ -1,0 +1,32 @@
+1- Que signifie DBMS?
+2- Que signifie RDBMS?
+3- Que signifie SQL?
+4- Qu’est ce qu’une base de données?
+5- Quelle est la différence entre les tables temporaires locales et les tables temporaires globales?
+6- Quels sont les tables et les champs?
+7- Que signifie CHECK constraint ( Contrainte de vérification )?
+8- Qu’est ce qu’une clé primaire(primary key)?
+9- Qu’est ce qu’une clé unique?
+10- Quelle est la différence entre la clé primaire et la clé unique?
+11- Qu’est ce qu’une clé Etrangère (foreign key)?
+12- Qu’est ce qu’une jointure?
+13- Citez les différents types de jointures que vous connaissez?
+14- Que signifie la normalisation dans les bases de données?
+15- Qu’est ce qu’une vue?
+16- Qu’est ce qu’une requête?
+17- Qu’est-ce qu’une sous-requête(Sub query) et ses propriétés ?
+18- Quels sont les propriétés de la sous-requête?
+19- Qu’est ce qu’un Trigger ou déclencheur ?
+20- Quels sont les différents types de déclencheurs?
+21- Quelle est la difference entre DELETE et TRUNCATE?
+22-Qu’est ce qu’une contrainte ?
+23- Que signifie Data Integrity ou intégrité des données?
+24- Que signifie Auto Increment?
+25- Qu’est ce qu’une clause?
+27- Comment sélectionner un seul enregistrement d’une table?
+28- Quelle est la difference entre UNION et UNION ALL?
+29-  Comment pouvons-nous afficher le nombre des enregistrements d’une table?
+30- A quoi sert l’opérateur ISNULL?
+bonus- Quelle est la différence les types de données varchar et nvarchar?
+bonus- pourquoi en utilise sysdate?
+bonus- citez la différence entre date et time?
